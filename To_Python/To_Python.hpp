@@ -4,4 +4,4 @@
 #include <string>
 
 
-string &interpret(const string &line);
+std::string interpret(const std::string &line);

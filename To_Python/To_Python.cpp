@@ -23,17 +23,22 @@ int main(int argc, char **argv) {
 
 #pragma endregion
 
-	string line;
+	std::string line;
+	std::string new_line;
 
 #pragma region READ_LOOP
 
+	ofstream new_file("test.py");
+
 	while (getline(file, line)) {
 
-		cout << line << endl;
+		new_line = interpret(line);
+		new_file << new_line << endl;
 
 	}
 
 #pragma endregion
+
 
 	getchar();
 
@@ -41,8 +46,10 @@ int main(int argc, char **argv) {
 }
 
 
-string &interpret(const string &line) {
+std::string interpret(const std::string &line) {
 
+	std::string py_line;
 
+	return py_line;
 
 }
